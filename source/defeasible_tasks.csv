@@ -1,0 +1,11 @@
+id,facts,rules,preferences,question,label
+1,Frog has $100; Dog has $30; Lion has $20; no attacks,R1: if frog > (dog+lion) then frog builds plant,,Does frog build plant?,Proved
+2,Frog has $100; Dog has $30; Lion has $20; frog attacks cat,R1: if frog > (dog+lion) then frog builds plant; R2: if frog attacks cat then frog does not build plant,R2>R1,Does frog build plant?,Disproved
+3,Frog has $100; Dog has $80; Lion has $30; no attacks,R1: if frog > (dog+lion) then frog builds plant,,Does frog build plant?,Disproved
+4,Seal is older than 2; has internet device,R2: if has internet device then seal reveals secret; R3: if older than 2 then seal reveals secret,R2>R3,Does seal reveal secret?,Proved
+5,Seal is older than 2,R2: if has internet device then seal reveals secret; R3: if older than 2 then seal reveals secret,R2>R3,Does seal reveal secret?,Proved
+6,Camel has 11 friends; watches 1995 movie,R1: if >10 friends then camel smiles; R2: if camel smiles then camel does not swim,R2>R1,Does camel swim?,Disproved
+7,Camel has 8 friends; watches 1995 movie,R1: if >10 friends then camel smiles; R2: if camel smiles then camel does not swim,R2>R1,Does camel swim?,Unknown
+8,Cat guards fields; Dog intrudes fields,R1: if intrudes fields then alarm triggers; R2: if cat guards fields then alarm does not trigger,R2>R1,Does alarm trigger?,Disproved
+9,Cat guards fields; Dog intrudes fields,R1: if intrudes fields then alarm triggers; R2: if cat sleeps then alarm does not trigger,R1>R2,Does alarm trigger?,Proved
+10,Lion is hungry; food is scarce,R1: if lion is hungry then lion hunts; R2: if food is scarce then lion does not hunt,R1>R2,Does lion hunt?,Proved
